@@ -1,0 +1,162 @@
+body, html
+{
+  width: 100%;
+  height: 100%;
+  padding: 0em;
+  margin: 0em;
+  overflow: hidden;
+}
+body {
+  background: #282C34;
+  color: #ABB2BF;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-weight: 300;
+  font-size: 10em;
+  margin: 0;
+  letter-spacing: 0.2em;
+}
+#drag {
+  background: #21252B;
+  width: 100%;
+  height: 2em;
+  -webkit-app-region: drag;
+}
+#quit {
+  transition: background 0.2s ease;
+  background: #FF0033;
+  width: 2em;
+  height: 2em;
+  float: right;
+  font-weight: 300;
+  -webkit-app-region: no-drag;
+}
+#quit:hover {
+  background: #CC0022;
+}
+#content {
+  height: 16px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+input, textarea {
+  background: #21252B;
+  /*color: #D7DAE0;*/
+  color: #ABB2BF;
+  border-width:0em;
+  border:none;
+  font-family: 'Roboto', sans-serif;
+  padding: 0.32em 0em;
+  width: 11.5em;
+}
+input {
+  text-align: center;
+}
+input[type=submit] {
+  transition: background 0.2s ease;
+  background: #2BA143;
+  /*color: #D7DAE0;*/
+  color: white;
+}
+input[type=submit]:hover {
+  background: #1E722F;
+}
+*:focus{
+  outline: none;
+}
+::-webkit-scrollbar {
+  background: inherit;
+  width: .8em;
+}
+
+::-webkit-scrollbar-thumb:window-inactive, ::-webkit-scrollbar-thumb {
+  background: #4B5262;
+  border-radius: .8em;
+}
+#login {
+  text-align: center;
+}
+#login input {
+  font-size: 2em;
+}
+.panel {
+  display: none;
+  width: 50%;
+  height: 100%;
+  float:right;
+  flex-direction: column;
+}
+#utility {
+  height: 3em;
+  background: #2C323C;
+  flex-shrink: 0;
+  text-align: center;
+  position: relative;
+}
+#server {
+  float: left;
+  width: 30%;
+}
+#chat {
+  width: 70%;
+}
+#status {
+  flex-grow: 1;
+}
+#status, #history, #mess {
+  overflow-y: auto;
+}
+#channels {
+  list-style-type: none;
+  -webkit-margin-before: 16px;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 16px;
+  -webkit-margin-end: 16px;
+  -webkit-padding-start: 0em;
+}
+#channels li {
+  margin: 0 0 16px 0;
+}
+#history {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 50%;
+  flex-grow: 1;
+}
+#history li {
+  padding: 12px 12px;
+  word-wrap: break-word;
+  text-align: justify;
+}
+#history li:nth-child(odd) {
+   background: #2C323C;
+}
+#mess {
+  width: 100%;
+  max-height: 200px;
+  resize: none;
+  font-size: 16px;
+  padding: 0.32em;
+  bottom: 0px;
+  box-sizing: border-box;
+}
+#send {
+  transition: background 0.2s, color 0.2s;
+  color: #4B5262;
+  height: 32px;
+  width: 64px;
+  border-radius: 16px;
+  padding: 0px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 16px;
+}
+#send:hover {
+  background: #2BA143;
+  color: white;
+}

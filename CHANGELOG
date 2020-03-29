@@ -1,0 +1,19 @@
+Dates are in the sensible dd/mm/yy format
+Symbols and their meanings are + added, * changed, - removed
+
+15/01/17 v0.0.0
+Started Node.js development and made simple clients and servers
++ Everything
+
+16/01/16 v0.0.1
+Added colours and fixed a few uglies from previous version
++ Colours
+* Messages
+- Uglies
+
+17/01/16 v0.0.1a
+Got external connections to work via both sides port forwarding
+* Addresses and ports
+- 0 character messages
++ Better info messages
++ Versioning support

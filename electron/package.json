@@ -1,0 +1,11 @@
+{
+  "name": "Decibel",
+  "version": "0.0.4",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^1.4.15"
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Decibel</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="drag"><div id="quit"></div></div>
+
+    <div id="content">
+
+      <span id="login">
+        <h1>DECIBEL</h1>
+        <p><br>We are using node <script>document.write(process.versions.node)</script>,
+        Chrome <script>document.write(process.versions.chrome)</script>,
+        and Electron <script>document.write(process.versions.electron)</script>.</p>
+
+        <form onsubmit="return validateForm()" autocomplete="off">
+          <p>Enter the address:port of the server and click connect.</p><br/><br/>
+          <input type="text" id="adpo"/><br/><br/>
+          <input type="submit" id="conn" value="CONNECT"/>
+        </form>
+      </span>
+
+
+
+      <span id="server" class="panel">
+        <div id=status>
+          <ul id="channels">
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+            <li>Channel</li>
+          </ul>
+        </div>
+      </span>
+
+
+
+      <span id="chat" class="panel">
+         <ul id="history"></ul>
+         <textarea id="mess" rows="3"></textarea>
+      </span>
+    </div>
+
+    <div id="utility">
+      <input type="button" id="send" value="SEND"/>
+    </div>
+
+  </body>
+  <script src="index.js" type="text/javascript"></script>
+</html>
